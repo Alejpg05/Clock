@@ -1,0 +1,52 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    background-color: black;
+}
+
+.clock{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    background-color: #000;
+    margin: 50px auto;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); 
+  }
+
+  .stick{
+    width: 50%;
+    height: 6px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    margin: 5px;
+  }
+
+  .hour-stick{
+    width: 40%;
+    height: 8px;
+    left: 9%;
+  }
+
+  .second-stick{
+    height: 4px;
+  }
